@@ -6,16 +6,14 @@ html, body{
 	line-height: 24px;
 	font-family: "PT Sans Narrow", "Arial", sans-serif;
 	text-transform: uppercase;
-}
+	color: #ffffff;
 
-*{
-	margin: 0;
-	padding: 0;
+	background: #000000 url("../img/bg-index.jpg") no-repeat center top;
 }
 
 
 /*Специальные классы*/
-.container{		border: 1px solid green;
+.container{			/*border: 1px solid green;*/
 	width: 940px;
 	margin: 0 auto;
 	padding: 0 10px; 
@@ -34,22 +32,84 @@ html, body{
 
 
 .main_header{
-	margin-bottom: 55px; border: 1px solid red;
+	margin-bottom: 55px;
+	color: #ffffff;
+	background: #000000;
 }
+
 .main_navigation{
 	float: left;
 	width: 780px;
 }
+.main_navigation a{
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+	padding: 25px 20px;
+}
+.main_navigation a:hover{
+	background-color: #232323;
+}
+.main_navigation ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	font-size: 0px;
+}
+.main_navigation li{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	line-height: 20px;
+}
+
 .user_block{
 	float: right;
-	width: 140px;
+	max-width: 140px;
 }
+.login{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	padding: 25px 20px 25px 50px; 
+
+	font-size: 16px;
+	line-height: 20px;
+	color: #ffffff;
+	text-decoration: none;
+}
+.login:hover{
+	background-color: #232323;
+}
+.login:hover::before{
+	opacity: 1;
+}
+.login::before{
+	content: "";
+
+	width: 25px;
+	height: 20px;
+
+	position: absolute;
+	top: 26px;
+	left: 15px;
+
+	background:  url("../img/sprite.png") no-repeat;
+	background-position: -48px -10px;
+	opacity: 0.3;
+}
+
+
 .index_logo{
 	height: 204px;
 	width: 368px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 25px;
+}
+.index_logo img{
+	height: 204px;
+	width: 368px;
 }
 
 
@@ -60,18 +120,50 @@ html, body{
 	float: left;
 	width: 300px;
 	margin-right: 20px;
+	text-align: center;
 }
 .features_item:last-child{
 	margin-right: 0px;
 }
+.features_name{
+	position: relative;
 
+	display: block;
+	margin-bottom: 30px;
+	padding-bottom: 35px;
+
+	font-size: 30px;
+	line-height: 42px;
+}
+.features_name::after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin-left: -10px;
+
+	background: #ffffff;
+	transform: rotate(45deg);
+}
+.features_item p{
+	margin: 10px;
+	margin-bottom: 0;
+}
 
 
 .index_content{
+	margin-bottom: 35px; 
 	padding: 50px 80px;
-	margin-bottom: 35px; border: 1px solid green;
+
+	color: #000000;
+	background: url(../img/index-content-shadow.png) center no-repeat,
+	#f8f5f2 url("../img/pattern-white.jpg");
+	
 }
-.index_content:last-child{border: 1px solid red;
+.index_content:last-child{
 	
 	margin-bottom: 65px;
 }
