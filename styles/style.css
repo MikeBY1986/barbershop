@@ -70,12 +70,13 @@ html, body{
 	float: left;
 	width: 780px;
 }
-.main_navigation a{
+.main_navigation a{ 
 	color: #ffffff;
 	text-decoration: none;
 	display: block;
-	padding: 25px 20px;
+	padding: 23px 20px;
 }
+.main_navigation a img{display: block;}
 .main_navigation a:hover{
 	background-color: #232323;
 }
@@ -89,7 +90,7 @@ html, body{
 	display: inline-block;
 	vertical-align: top;
 	font-size: 16px;
-	line-height: 20px;
+	line-height: 24px;
 }
 
 .user_block{
